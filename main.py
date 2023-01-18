@@ -41,10 +41,10 @@ env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 
 
-def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
     """
-    update.message.reply_text(
+    await update.message.reply_text(
         "HI",
         # reply_markup=markup, 
     )

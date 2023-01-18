@@ -4,6 +4,7 @@ import requests
 from pathlib import Path
 from pprint import pprint
 from dotenv import load_dotenv
+from flask import Flask
 
 
 from telegram import __version__ as TG_VER
@@ -29,6 +30,11 @@ from telegram.ext import (
     ShippingQueryHandler,
     filters,
 )
+
+
+app = Flask(__name__)
+
+
 
 # Enable logging
 logging.basicConfig(
@@ -64,6 +70,9 @@ def main() -> None:
     application.run_polling()
 
 
-if __name__ == "__main__":
-    main()
 
+
+from flask import Flask, request
+
+flask_app = Flask(__name__)
+main() 

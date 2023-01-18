@@ -66,7 +66,7 @@ def main() -> None:
     # simple start function
     application.add_handler(CommandHandler("start", start))
 
-    # Run the bot until the user presses Ctrl-C  
+    # Run the bot until the user  presses Ctrl-C  
     application.run_polling()
 
 

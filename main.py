@@ -72,7 +72,7 @@ def main() -> None:
 
 
 
-from flask import Flask, request
+from flask import Flask, request 
 
 flask_app = Flask(__name__)
 main() 
